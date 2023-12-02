@@ -1,0 +1,487 @@
+* {
+	margin: 0;
+}
+
+.all {
+	margin-bottom: 30px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.all-box {
+	width: 1260px;
+}
+
+body {
+	color: #666665;
+	background-color: #fffefc;
+	font-size: 18px;
+	font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI",
+		"Roboto", "Helvetica Neue", "Arial", sans-serif;
+	line-height: 1.5;
+	letter-spacing: 0.02em;
+}
+ul {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+p {
+	margin: 10px 0px 20px;
+}
+a {
+	text-decoration: underline;
+	text-underline-offset: 0.2em;
+	color: #666665;
+}
+a:hover {
+	text-decoration: none;
+	color: #e16259;
+}
+a:link,
+a:visited {
+	text-decoration: none;
+}
+
+h1 {
+	color: black;
+	font-size: 74px;
+	line-height: 1;
+	letter-spacing: -0.025em;
+	margin-bottom: 20px;
+}
+h2 {
+	color: black;
+	font-size: 38px;
+	line-height: 1.1em;
+	letter-spacing: -0.025em;
+	margin-bottom: 15px;
+}
+h3 {
+	color: black;
+	font-size: 30px;
+	line-height: 1.2;
+	letter-spacing: -0.025em;
+	margin: 10px 0px 20px;
+	width: 300px;
+}
+hr {
+	border: 0;
+	height: 0.5px;
+	background: #e6e6e6;
+	margin: 40px 0px;
+}
+blockquote {
+	color: black;
+	margin: 0;
+}
+
+/* NAVIGATION BAR */
+
+nav {
+	position: sticky;
+	top: 0;
+	z-index: 100;
+	box-sizing: border-box;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 60px;
+	background-color: #fffefc;
+	color: black;
+	font-size: 15px;
+	font-weight: 100;
+	letter-spacing: 0;
+	margin: 0px 20px;
+}
+.nav-box {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 1260px;
+	height: 60px;
+	border-bottom-style: solid;
+	border-bottom-width: 1.5px;
+	border-bottom-color: #e6e6e6;
+}
+.nav-left {
+	display: flex;
+}
+.nav-logo {
+	width: 90px;
+	padding-right: 20px;
+}
+.nav-links-left {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 440px;
+}
+.nav-links-right {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 320px;
+}
+.nav-links-left a {
+	text-decoration: none;
+	color: black;
+}
+.nav-links-right a {
+	text-decoration: none;
+	color: black;
+}
+.nav-links-box {
+	display: flex;
+	align-items: center;
+	background-color: white;
+	font-weight: 600;
+	border-radius: 3px;
+	padding: 4px 10px;
+}
+.nav-links-box:hover {
+	background-color: #f0efed;
+}
+.nav-links-arrow {
+	margin-left: 8px;
+}
+.checkbtn {
+	font-size: 20px;
+	color: black;
+	float: right;
+	cursor: pointer;
+	display: none;
+}
+#check {
+	display: none;
+}
+.burger div {
+	width: 20px;
+	height: 1.6px;
+	background-color: black;
+	margin: 6px 0;
+}
+
+/* HEADER  */
+
+.header-container {
+	display: flex;
+	flex-direction: row-reverse;
+	justify-content: space-between;
+	align-items: center;
+	padding: 120px 0px 30px;
+}
+.headerText-container {
+	width: 610px;
+}
+.headerSubtext-container {
+	width: 415px;
+}
+.headerImage-container {
+	display: flex;
+	width: 500px;
+	justify-content: center;
+	padding-right: 50px;
+	margin-bottom: 30px;
+}
+.headerImage {
+	justify-content: center;
+	width: 100%;
+	height: auto;
+}
+.headerTeamText {
+	font-size: 12px;
+	font-weight: 500;
+	letter-spacing: 0.03em;
+	text-transform: uppercase;
+	padding: 0px 0px 5px;
+}
+.headerTeam-container {
+	max-width: 540px;
+	padding: 20px 0px;
+}
+.headerTeamImage-container {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: flex-start;
+	width: 100%;
+}
+.headerTeamImage-size {
+	display: flex;
+	align-items: center;
+	padding-right: 20px;
+}
+.headerTeamImage {
+	max-height: 22px;
+	max-width: 90px;
+	padding-bottom: 20px;
+}
+
+/* FEATURES */
+
+.feature-container {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	padding: 55px 0px 55px;
+}
+.featureIcon-1 {
+	max-width: 100px;
+}
+.featureIcon-2 {
+	max-width: 80px;
+}
+.featureIcon-3 {
+	max-width: 160px;
+}
+.featureIcon-4 {
+	max-width: 60px;
+}
+.featureText-container {
+	width: 360px;
+	padding-right: 50px;
+}
+.featureMedia-container {
+	width: 840px;
+}
+.featureVideo {
+	max-width: 100%;
+	height: auto;
+	border-radius: 15px;
+	box-shadow: 0px 1px 5px rgb(211, 211, 211);
+}
+.featureImage {
+	max-width: 100%;
+	height: auto;
+	border-style: solid;
+	border-color: #e0dbd4;
+	border-width: 1px;
+	border-radius: 15px;
+}
+
+
+
+
+
+/* BUTTONS */
+
+button {
+	font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI",
+		"Roboto", "Helvetica Neue", "Arial", sans-serif;
+}
+.button-1 {
+	display: flex;
+	justify-content: center;
+	box-sizing: border-box;
+	color: white;
+	background-color: #e16259;
+	font-size: 14px;
+	font-weight: 600;
+	line-height: 1;
+	border-style: solid;
+	border-width: 1px;
+	border-radius: 4px;
+	border-color: #bc5444;
+	padding: 10px 30px 10px;
+	cursor: pointer;
+}
+.button-1:hover {
+	background-color: #cf534a;
+}
+.button-2 {
+	display: flex;
+	justify-content: center;
+	box-sizing: border-box;
+	color: white;
+	background-color: #e16259;
+	font-size: 14px;
+	font-weight: 600;
+	line-height: 1;
+	border-style: solid;
+	border-width: 1px;
+	border-radius: 4px;
+	border-color: #bc5444;
+	padding: 10px 12px 10px;
+	cursor: pointer;
+}
+.button-2:hover {
+	background-color: #cf534a;
+}
+.button-3 {
+	display: block;
+	margin: auto;
+	justify-content: center;
+	box-sizing: border-box;
+	color: white;
+	background-color: #e16259;
+	font-size: 14px;
+	font-weight: 600;
+	line-height: 1;
+	border-style: solid;
+	border-width: 1px;
+	border-radius: 4px;
+	border-color: #bc5444;
+	padding: 10px 70px 10px;
+	cursor: pointer;
+}
+.button-3:hover {
+	background-color: #cf534a;
+}
+.button-white {
+	display: flex;
+	justify-content: center;
+	box-sizing: border-box;
+	color: black;
+	background-color: white;
+	font-size: 14px;
+	font-weight: 600;
+	line-height: 1;
+	border-style: solid;
+	border-width: 1px;
+	border-radius: 4px;
+	border-color: #e5e4e2;
+	padding: 10px 12px 10px;
+	cursor: pointer;
+}
+.button-white:hover {
+	background-color: #efeeec;
+}
+.button-arrow {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	box-sizing: border-box;
+	color: black;
+	background-color: white;
+	font-size: 14px;
+	font-weight: 600;
+	line-height: 1;
+	border-style: solid;
+	border-width: 1px;
+	border-radius: 4px;
+	border-color: #e5e4e2;
+	padding: 10px 12px 10px;
+	margin-right: 10px;
+	cursor: pointer;
+}
+.button-arrow:hover {
+	background-color: #efeeec;
+}
+button:visited {
+	text-decoration: none;
+}
+
+/* FOOTER */
+
+footer {
+	font-size: 14px;
+	font-weight: 370;
+	line-height: 1.85;
+	letter-spacing: 0.02em;
+}
+footer li:hover {
+	color: #e16259;
+	text-decoration: underline;
+	cursor: pointer;
+}
+.footer-flex {
+	display: flex;
+	flex-flow: row wrap;
+}
+.footer-item {
+	width: calc(100% / 6);
+}
+.footer-item-bold {
+	color: black;
+	font-size: 15px;
+	font-weight: 600;
+	letter-spacing: 0.01em;
+}
+.footer-item-logo {
+	width: calc(100% / 6);
+}
+.footer-logo {
+	width: 90px;
+}
+.footerBottom-container {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+}
+.footerBottom-flex {
+	display: flex;
+	flex-flow: row wrap;
+}
+.footerBottom-item-flex {
+	display: flex;
+	flex-flow: row wrap;
+}
+.footerBottom-item {
+	color: black;
+	font-weight: 600;
+	padding-right: 25px;
+	letter-spacing: 0.001em;
+}
+
+.social-logo-container {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	width: 190px;
+}
+.social-logo {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 32px;
+	height: 30px;
+	border-style: none;
+	background-color: transparent;
+}
+.social-twitter,
+.social-linkedin,
+.social-facebook,
+.social-instagram,
+.social-youtube {
+	max-width: 25px;
+	max-height: 25px;
+}
+.social-twitter,
+.social-linkedin,
+.social-facebook,
+.social-instagram,
+.social-youtube path {
+	fill: #666665;
+}
+.social-logo:hover {
+	background-color: #f0efed;
+}
+.social-twitter:hover path {
+	fill: #1da1f2;
+}
+.social-linkedin:hover path {
+	fill: #2867b2;
+}
+.social-facebook:hover path {
+	fill: #4267b2;
+}
+.social-instagram:hover path {
+	fill: black;
+}
+.social-youtube:hover path {
+	fill: #ff0000;
+}
+.notion-logo {
+	max-width: 100%;
+	height: auto;
+}
+
+
+
+
+
